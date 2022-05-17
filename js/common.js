@@ -46,14 +46,21 @@ $(document).ready(function () {
     });
 
     // menu mobile
-    $('.submenu').click(function () {
-        $(this).find('ul').slideToggle();
-    });
+    if ($(window).width() < 992) {
+        $('.submenu').click(function () {
+            $(this).find('ul').slideToggle();
+        });
+    }
+
 
     $('.burger').click(function () {
         $(this).toggleClass('open');
         $('.mobilemenu-wrapper').toggleClass('open');
     });
+
+
+
+
 
 
 });
