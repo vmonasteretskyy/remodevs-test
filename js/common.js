@@ -7,8 +7,10 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 1000,
-        speed: 2000,
+        autoplaySpeed: 0,
+        speed: 10000,
+        cssEase: 'linear',
+        pauseOnHover: false,
         responsive: [{
                 breakpoint: 1200,
                 settings: {
