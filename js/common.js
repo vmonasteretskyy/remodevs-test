@@ -11,6 +11,7 @@ $(document).ready(function () {
         speed: 5000,
         cssEase: 'linear',
         pauseOnHover: false,
+        pauseOnFocus: false,
         responsive: [{
                 breakpoint: 1200,
                 settings: {
@@ -36,6 +37,10 @@ $(document).ready(function () {
                 }
             },
         ]
+    });
+
+    $('.trusted-slider a').click(function (e) {
+        e.preventDefault();
     });
 
     // header - add shadow
