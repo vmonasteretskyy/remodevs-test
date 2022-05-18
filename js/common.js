@@ -8,7 +8,7 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 0,
-        speed: 10000,
+        speed: 5000,
         cssEase: 'linear',
         pauseOnHover: false,
         responsive: [{
