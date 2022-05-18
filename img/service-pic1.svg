@@ -235,7 +235,7 @@
         }
 
         .code1 {
-            animation: code 2s infinite;
+            animation: code 4s infinite;
         }
 
     </style>

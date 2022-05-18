@@ -85,7 +85,7 @@
        fill: #fff;
     }
     50% {
-      fill: #e4d734;
+      fill: #B9D4FF;
     }
     100% {
         fill: #fff;
