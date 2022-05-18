@@ -12,6 +12,7 @@ $(document).ready(function () {
         cssEase: 'linear',
         pauseOnHover: false,
         pauseOnFocus: false,
+        swipe: false,
         responsive: [{
                 breakpoint: 1200,
                 settings: {
