@@ -67,6 +67,12 @@ $(document).ready(function () {
         $('.mobilemenu-wrapper').toggleClass('open');
     });
 
+    // init select style
+    if ($('select').length > 0) {
+        $(function () {
+            $('select').styler();
+        });
+    }
 
 
 
