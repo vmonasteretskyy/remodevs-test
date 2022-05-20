@@ -1188,14 +1188,14 @@
 .arrow {
      animation: move2 5s infinite;
 }
-.arrow1 {
+<!-- .arrow1 {
      animation: move2 5s infinite;
       animation-delay: .3s;
-}
-.earth {
+} -->
+<!-- .earth {
     animation: move2 5s infinite;
      animation-delay: .3s;
-}
+} -->
 
 @keyframes move2 {
     0% {
