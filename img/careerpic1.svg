@@ -130,7 +130,7 @@
 
 <style>
 .move {
-     animation: move 3s infinite;
+     animation: move 4s infinite;
 }
 
 @keyframes move {
