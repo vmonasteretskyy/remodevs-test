@@ -68,9 +68,9 @@ $(document).ready(function () {
     });
 
     // init select style
-    if ($('select').length > 0) {
+    if ($('select, input[type="file"]').length > 0) {
         $(function () {
-            $('select').styler();
+            $('select, input[type="file"]').styler();
         });
     }
 
