@@ -76,6 +76,24 @@ $(document).ready(function () {
 
 
 
+    $(".applybox .blue-btn").on("click", function (event) {
+        var headerHeight = 93;
+        // if ($(window).width() < 1651 && $(window).width() > 1024) {
+        //     var headerHeight = 80;
+        // }
+        // else if ($(window).width() < 992 && $(window).width() > 575) {
+        //     var headerHeight = 60;
+        // } else if ($(window).width() < 576) {
+        //     var headerHeight = 55;
+        // }
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 40;
+        $('body,html').animate({
+            scrollTop: top - headerHeight
+        }, 1000);
+    });
+
 
 
 });
