@@ -95,5 +95,28 @@ $(document).ready(function () {
     });
 
 
+    $('.knowledgebsse__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><svg width="52" height="14" viewBox="0 0 52 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.04904 13.0986L0.999348 7.04894M0.999348 7.04894L7.04904 0.999252M0.999348 7.04894L50.2773 7.04894" stroke="#1348A7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg width="52" height="14" viewBox="0 0 52 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44.2283 1L50.278 7.04969M50.278 7.04969L44.2283 13.0994M50.278 7.04969H1" stroke="#1348A7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+
+        ]
+    });
+
 
 });
