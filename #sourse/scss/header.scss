@@ -191,7 +191,7 @@ header.header {
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
-        color: #1B6DFF;
+        color: #fff;
         text-align: center;
         min-height: 58px;
         max-width: 195px;
@@ -202,10 +202,11 @@ header.header {
         border: 1px solid #1B6DFF;
         border-radius: 30px;
         transition: 0.5s;
+        background: #1B6DFF;
 
         &:hover {
-            color: #fff;
-            background: #1B6DFF;
+            color: #1B6DFF;
+            background: #fff;
         }
     }
 
@@ -243,11 +244,11 @@ header.header.header_back {
     }
 
     .col-lg-2 .header__btn {
-        color: #fff;
-        border-color: #fff;
+        // color: #fff;
+        // border-color: #fff;
 
         &:hover {
-            border-color: #1B6DFF;
+            // border-color: #1B6DFF;
         }
     }
 
@@ -473,8 +474,8 @@ header.header.header_back {
         }
 
        .header__nav .header__btn {
-           border-color: #fff;
-           color: #fff;
+        //    border-color: #fff;
+        //    color: #fff;
             
         }
     }
