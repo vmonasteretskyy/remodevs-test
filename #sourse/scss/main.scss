@@ -1,3 +1,14 @@
+/* text animation */
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 .welcomesect {
     overflow: hidden;
     position: relative;
@@ -12,6 +23,7 @@
 
     .welcomesect__text {
         padding-top: 120px;
+        text-align: center;
 
         .subtitle {
             margin-bottom: 10px;
@@ -21,19 +33,27 @@
         }
 
         h1 {
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             font-weight: 500;
-            font-size: 46px;
+            font-size: 50px;
             line-height: 147%;
             color: #222;
+
+            span {
+                color: #2B7CFF;
+                display: inline-block;
+            }
         }
-
+        
         .descr {
-            max-width: 620px;
             margin-bottom: 55px;
-
+            
             p {
-                font-size: 19px;
+                margin: 0 auto;
+                white-space: nowrap;
+                overflow: hidden;
+                animation: animated-text 6s steps(55, end) 1 normal both;
+                font-size: 22px;
                 line-height: 150%;
 
                 &:last-child {
@@ -43,7 +63,7 @@
         }
 
         .clutchbox {
-            margin-top: 110px;
+            margin: 110px auto 50px;
             display: flex;
             max-width: 480px;
             align-items: center;
@@ -1149,6 +1169,7 @@
 }
 
 @media(max-width:575.8px) {
+
     .ourstatistics {
         padding-bottom: 30px;
 
@@ -1156,6 +1177,7 @@
             margin-bottom: 30px;
         }
     }
+
     .ourstatistics__box {
         height: 360px;
         padding: 30px 20px 0;
@@ -1175,7 +1197,6 @@
     }
 
     .welcomesect .welcomesect__text .descr {
-        max-width: 285px;
         margin-bottom: 28px;
 
         p {
@@ -1365,6 +1386,11 @@
 }
 
 @media(max-width:360.8px) {
+
+    .welcomesect .welcomesect__text .descr p {
+        white-space: initial;
+        height: 40px;
+    }
 
     // ----new
     .trustedus__wrapp .trustedus__col {
